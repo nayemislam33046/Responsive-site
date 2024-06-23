@@ -10,6 +10,9 @@ export const MyContext = ({children})=>{
     if (Darkmodes) {
         return JSON.parse(localStorage.getItem("Darkmode"));
     }
+      else{
+      return false
+      }
    }
 
     const initilState = {
